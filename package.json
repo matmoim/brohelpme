@@ -1,0 +1,25 @@
+{
+  "name": "brohelpme",
+  "version": "1.0.0",
+  "description": "my communicate with some good peoples for my progress in javascript i trying tu understend the how git and me can works",
+  "main": "bosmr.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matmoim/brohelpme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matmoim/brohelpme/issues"
+  },
+  "homepage": "https://github.com/matmoim/brohelpme#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
+  }
+}
