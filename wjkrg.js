@@ -1,1 +1,5 @@
-console.log("sdadth g");
+let massage;
+
+massage = 'hello';
+
+alert(massage);
