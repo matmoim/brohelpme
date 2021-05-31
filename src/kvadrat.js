@@ -1,5 +1,5 @@
 
-let zelena96 []
+let zelena96 = []
 
 let user = 10;
 let acam = '';
