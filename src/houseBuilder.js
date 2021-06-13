@@ -54,18 +54,18 @@ Task 4:
 function builder(number) {
 
     let strr = '';
-    for(let i = 0; i < number; i++){
-        strr = strr +'#';
+    for (let i = 0; i < number; i++) {
+        strr = strr + '#';
     }
     let result = '';
-    for( let i = 0; i < number; i++){
+    for (let i = 0; i < number; i++) {
         result += strr;
-        if(i !== number - 1){
-            result  += '\n';
+        if (i !== number - 1) {
+            result += '\n';
         }
     };
-    
-    
+
+
 
     return result; // this variable you should define and store final string in it
 }
