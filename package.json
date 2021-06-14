@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "check": "node src/engine",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sh -c 'node src/tests/$0.test.js'"
   },
   "repository": {
     "type": "git",
@@ -19,7 +18,12 @@
   },
   "homepage": "https://github.com/matmoim/brohelpme#readme",
   "dependencies": {
+    "boxen": "^5.0.1",
+    "cfonts": "^2.9.3",
     "chalk": "^4.1.1",
-    "eslint": "^7.27.0"
+    "eslint": "^7.27.0",
+    "jest": "^27.0.4",
+    "moment": "^2.29.1",
+    "winston": "^3.3.3"
   }
 }
