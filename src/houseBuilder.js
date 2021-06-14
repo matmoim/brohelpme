@@ -53,7 +53,14 @@ Task 4:
 // WRITE YOUR CODE INSIDE FUNCTION'S BLOCK
 function builder(number) {
 
-    // here
+    let result = '';
+    let row = '';
+    for(let i = 1; i < number; i++){
+        
+        row += '#';
+
+        result +=  row + '\n';
+    }
 
     return result; // this variable you should define and store final string in it
 }
