@@ -4,7 +4,34 @@
   "description": "my communicate with some good peoples for my progress in javascript i trying tu understend the how git and me can works",
   "main": "bosmr.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^@app(.*)$": "<rootDir>/components/app$1",
+      "^@shared(.*)$": "<rootDir>/shared$1",
+      "^@config(.*)$": "<rootDir>/config$1",
+      "^@components(.*)$": "<rootDir>/components$1",
+      "^@filters(.*)$": "<rootDir>/filters$1",
+      "^@guards(.*)$": "<rootDir>/guards$1",
+      "^@interfaces(.*)$": "<rootDir>/interfaces$1",
+      "^@pipes(.*)$": "<rootDir>/pipes$1",
+      "^@dto(.*)$": "<rootDir>/dto$1",
+      "^@responses(.*)$": "<rootDir>/responses$1",
+      "^@interceptors(.*)$": "<rootDir>/interceptors$1",
+      "^@decorators(.*)$": "<rootDir>/decorators$1",
+      "^@helpers(.*)$": "<rootDir>/helpers$1",
+      "^@testdata(.*)$": "<rootDir>/testData$1"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testSequencer": "<rootDir>/testSequencer.js",
+    "testRegex": ".test.js$",
+    "testEnvironment": "node"
   },
   "repository": {
     "type": "git",
@@ -16,10 +43,13 @@
     "url": "https://github.com/matmoim/brohelpme/issues"
   },
   "homepage": "https://github.com/matmoim/brohelpme#readme",
-  "dependencies": {},
   "devDependencies": {
-    "eslint": "^7.23.0",
+    "eslint": "^7.29.0",
     "eslint-config-airbnb-base": "^14.2.1",
-    "eslint-plugin-import": "^2.22.1"
+    "eslint-plugin-import": "^2.23.4"
+  },
+  "dependencies": {
+    "@jest/test-sequencer": "^27.0.4",
+    "jest": "^27.0.4"
   }
 }
