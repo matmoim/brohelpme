@@ -4,31 +4,19 @@
   "description": "my communicate with some good peoples for my progress in javascript i trying tu understend the how git and me can works",
   "main": "bosmr.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "checkScript": "sh -c 'jest --verbose src/__test__/$0.test.js'",
+    "check": "npm run checkScript"
   },
   "jest": {
     "moduleNameMapper": {
-      "^@app(.*)$": "<rootDir>/components/app$1",
-      "^@shared(.*)$": "<rootDir>/shared$1",
-      "^@config(.*)$": "<rootDir>/config$1",
-      "^@components(.*)$": "<rootDir>/components$1",
-      "^@filters(.*)$": "<rootDir>/filters$1",
-      "^@guards(.*)$": "<rootDir>/guards$1",
-      "^@interfaces(.*)$": "<rootDir>/interfaces$1",
-      "^@pipes(.*)$": "<rootDir>/pipes$1",
-      "^@dto(.*)$": "<rootDir>/dto$1",
-      "^@responses(.*)$": "<rootDir>/responses$1",
-      "^@interceptors(.*)$": "<rootDir>/interceptors$1",
-      "^@decorators(.*)$": "<rootDir>/decorators$1",
-      "^@helpers(.*)$": "<rootDir>/helpers$1",
-      "^@testdata(.*)$": "<rootDir>/testData$1"
     },
     "moduleFileExtensions": [
       "js",
       "json",
       "ts"
     ],
-    "rootDir": "src",
+    "rootDir": "./",
     "testSequencer": "<rootDir>/testSequencer.js",
     "testRegex": ".test.js$",
     "testEnvironment": "node"
